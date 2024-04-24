@@ -35,3 +35,7 @@ body {
   height: 35px;
   margin: 5px 5px;
 }
+
+.column:hover {
+  background-color: red;
+}
