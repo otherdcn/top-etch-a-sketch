@@ -30,8 +30,8 @@ body {
 }
 
 .column {
-  border: #f63838 solid 2px;
-  width: 15px;
-  height: 15px;
-  margin: 10px 10px;
+  border: #f63838 solid 1px;
+  width: 35px;
+  height: 35px;
+  margin: 5px 5px;
 }
