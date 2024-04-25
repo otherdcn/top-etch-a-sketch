@@ -1,7 +1,7 @@
-const containerDiv = document.querySelector(".container");
+const containerDiv = document.querySelector(".grid-container");
 
-let numOfRows = 4;
-let numOfColumns = 4;
+let numOfRows = 3;
+let numOfColumns = 3;
 let rowElements = [];
 let columnElements = [];
 
