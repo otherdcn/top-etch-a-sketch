@@ -1,8 +1,8 @@
 const containerDiv = document.querySelector(".grid-container");
 const UserDefGridBtn = document.querySelector(".user-defined-grid");
 
-let numOfRows = 3;
-let numOfColumns = 3;
+let numOfRows = 16;
+let numOfColumns = 16;
 let rowElements = [];
 let columnElements = [];
 
