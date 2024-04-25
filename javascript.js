@@ -1,4 +1,5 @@
 const containerDiv = document.querySelector(".grid-container");
+const UserDefGridBtn = document.querySelector(".user-defined-grid");
 
 let numOfRows = 3;
 let numOfColumns = 3;
@@ -25,3 +26,21 @@ function generateGrid(numOfRows,numOfColumns) {
 }
 
 generateGrid(numOfRows,numOfColumns);
+
+UserDefGridBtn.addEventListener("click", () => {
+  let gridNumber = prompt("Please enter number (under 100): ");
+
+  if (gridNumber < 101) {
+    console.log(`You've entered : ${gridNumber}`);
+    rowElements = [];
+    columnElements = [];
+  
+    while (containerDiv.hasChildNodes()) {
+      containerDiv.removeChild(containerDiv.firstChild);
+    }
+  
+    generateGrid(gridNumber,gridNumber);
+  } else {
+    alert(`${gridNumber} too high. Should be under 100!`)
+  }
+});
